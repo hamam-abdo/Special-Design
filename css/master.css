@@ -235,16 +235,25 @@ header {
   left: 0;
   width: 100%;
   z-index: 999;
-  transition: 0.7s;
-  -webkit-transition: 0.7s;
-  -moz-transition: 0.7s;
-  -ms-transition: 0.7s;
-  -o-transition: 0.7s;
-  top: -1px;
+ 
+  
 }
 .sticky {
-  position: sticky;
+  position: fixed;
   background-color: black;
+  animation: i 1s  ;
+  top: 0px;
+  -webkit-animation: i 1s  ;
+}
+@keyframes i {
+  from {
+    top: -60px;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
 }
 
 header .container {
